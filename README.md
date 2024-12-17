@@ -95,6 +95,24 @@ docker compose up -d
 php artisan sentry:test
 ```
 
+- Run e2e tests console
+
+```bash
+npx playwright test
+```
+
+- Run e2e tests ui
+
+```bash
+npx playwright test --ui
+```
+
+- Run generator interface tests
+
+```bash
+npx playwright codegen
+```
+
 ## Contributing
 
 Thank you for considering contributing to the template! The contribution guide can be found in the [Contributing document](./CONTRIBUTING.md).
