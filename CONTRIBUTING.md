@@ -1,4 +1,3 @@
-
 # Contributing to Admin Template Laravel/React
 
 Thank you for your interest in contributing to this project! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Here are some guidelines to help you get started:
