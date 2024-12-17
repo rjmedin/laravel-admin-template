@@ -1,5 +1,7 @@
 # Admin template Laravel/React
 
+![License](https://img.shields.io/badge/license-MIT-blue) ![Version](https://img.shields.io/badge/version-0.2.0-orange)
+
 This project is an initial base for SAAS (Software as a Service) systems using Laravel and React.
 
 ## About template
@@ -100,3 +102,7 @@ See the [Changelog](./CHANGELOG.md) for more information on what has changed rec
 ## License
 
 The template is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Support
+
+For any inquiries or support, please contact me at [khalisser@gmail.com](mailto:khalisser@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/geekhadev/).
