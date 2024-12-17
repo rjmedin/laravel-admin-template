@@ -1,3 +1,6 @@
-npm run lint:fix
-npm run format
-npm run pint
+pnpm run lint
+pnpm run format
+pnpm run pint
+pnpm run vitest
+pnpm run pest
+pnpm run playwrite

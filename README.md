@@ -54,7 +54,7 @@ This project is an initial base for SAAS (Software as a Service) systems using L
 4. Install JavaScript dependencies
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 5. Run migrations
@@ -78,7 +78,7 @@ This project is an initial base for SAAS (Software as a Service) systems using L
 8. Run frontend development server
 
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 > Note: You can change the database credentials in the `.env` file. And if not have the database, you can create with docker compose.
@@ -89,29 +89,61 @@ docker compose up -d
 
 ## Commands
 
+- Run lint (JavaScript)
+
+```bash
+pnpm run lint
+```
+
+- Run Pint (PHP)
+
+```bash
+pnpm run pint
+```
+
+- Run format (JavaScript)
+
+```bash
+pnpm run format
+```
+
 - Test sentry integration
 
 ```bash
-php artisan sentry:test
+pnpm run sentry:test
+```
+
+- Run unit tests
+
+```bash
+pnpm run vitest
 ```
 
 - Run e2e tests console
 
 ```bash
-npx playwright test
+pnpm run playwrite
 ```
 
 - Run e2e tests ui
 
 ```bash
-npx playwright test --ui
+pnpm run playwrite --ui
 ```
 
 - Run generator interface tests
 
 ```bash
-npx playwright codegen
+pnpm run playwright codegen
 ```
+
+- Run unit tests or integration tests (PHP)
+
+```bash
+pnpm run pest
+```
+
+> These commands help to keep the code clean and functional before committing to the repository.
 
 ## Contributing
 

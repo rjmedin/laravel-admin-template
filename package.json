@@ -8,8 +8,10 @@
     "lint:fix": "eslint . --fix",
     "pint": "./vendor/bin/pint",
     "format": "prettier --write .",
-    "test:e2e": "playwright test",
-    "test:js": "vitest"
+    "playwrite": "playwright test",
+    "vitest": "vitest",
+    "pest": "./vendor/bin/pest",
+    "sentry:test": "php artisan sentry:test"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
