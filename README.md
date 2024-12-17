@@ -87,6 +87,14 @@ This project is an initial base for SAAS (Software as a Service) systems using L
 docker compose up -d
 ```
 
+## Commands
+
+- Test sentry integration
+
+```bash
+php artisan sentry:test
+```
+
 ## Contributing
 
 Thank you for considering contributing to the template! The contribution guide can be found in the [Contributing document](./CONTRIBUTING.md).
