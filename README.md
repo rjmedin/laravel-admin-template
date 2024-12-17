@@ -93,6 +93,10 @@ Thank you for considering contributing to the template! The contribution guide c
 
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
+## Changelog
+
+See the [Changelog](./CHANGELOG.md) for more information on what has changed recently.
+
 ## License
 
 The template is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
