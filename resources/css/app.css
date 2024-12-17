@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#changelog {
+  @apply text-gray-700;
+}
+
+#changelog h3 {
+  @apply font-bold mt-4 text-gray-500;
+}
+
+#changelog .prose p:first-child {
+  @apply font-bold mt-4;
+}
