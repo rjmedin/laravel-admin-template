@@ -9,7 +9,7 @@
     "pint": "./vendor/bin/pint",
     "format": "prettier --write .",
     "playwrite": "playwright test",
-    "vitest": "vitest",
+    "vitest": "vitest --run",
     "pest": "./vendor/bin/pest",
     "sentry:test": "php artisan sentry:test"
   },

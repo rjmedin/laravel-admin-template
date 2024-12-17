@@ -1,6 +1,6 @@
 pnpm run lint
-pnpm run format
 pnpm run pint
+pnpm run format
 pnpm run vitest
 pnpm run pest
 pnpm run playwrite
