@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/changelog', [ChangelogController::class, 'show'])->name('changelog.show');
 
 Route::get('/debug-sentry', function () {
-    $message = 'Error message ' . date('Y-m-d H:i:s');
+    $message = 'Error message '.date('Y-m-d H:i:s');
     throw new Exception($message);
 });
 
