@@ -2,6 +2,8 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue) ![Version](https://img.shields.io/badge/version-0.2.0-orange)
 
+![Dashboard](./public/dashboard.png)
+
 This project is an initial base for SAAS (Software as a Service) systems using Laravel and React.
 
 ## About template
