@@ -13,6 +13,7 @@
     "pest": "./vendor/bin/pest",
     "sentry:test": "php artisan sentry:test",
     "tinker": "php artisan tinker",
+    "schedule": "php artisan schedule:work",
     "clear": "php artisan config:clear && php artisan cache:clear && php artisan view:clear && php artisan route:clear"
   },
   "devDependencies": {

@@ -2,10 +2,12 @@
 
 use App\Http\Controllers\ChangelogController;
 use App\Http\Controllers\ProfileController;
+use App\Jobs\DebugJob;
 use App\Models\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Benchmark;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
@@ -47,6 +49,10 @@ Route::get('/debug-cache', function () {
             });
         },
     ]);
+
+    return response()->json([
+        'message' => 'DebugCache',
+    ]);
 });
 
 Route::get('/debug-storage', function () {
@@ -58,6 +64,22 @@ Route::get('/debug-storage', function () {
         'private_content' => Storage::disk('local')->get('test_private.txt'),
         'public_content' => Storage::disk('public')->get('test_public.txt'),
         's3_content' => Storage::disk('s3')->get('test_s3.txt'),
+    ]);
+});
+
+Route::get('/debug-log', function () {
+    Log::info('DebugLog');
+
+    return response()->json([
+        'message' => 'DebugLog',
+    ]);
+});
+
+Route::get('/debug-job', function () {
+    DebugJob::dispatch();
+
+    return response()->json([
+        'message' => 'DebugJob',
     ]);
 });
 
