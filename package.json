@@ -12,7 +12,8 @@
     "vitest": "vitest --run",
     "pest": "./vendor/bin/pest",
     "sentry:test": "php artisan sentry:test",
-    "tinker": "php artisan tinker"
+    "tinker": "php artisan tinker",
+    "clear": "php artisan config:clear && php artisan cache:clear && php artisan view:clear && php artisan route:clear"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",

@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\ChangelogController;
 use App\Http\Controllers\ProfileController;
+use App\Models\User;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Benchmark;
 use Inertia\Inertia;
 
 Route::get('/', function () {
@@ -30,6 +33,19 @@ Route::get('/changelog', [ChangelogController::class, 'show'])->name('changelog.
 Route::get('/debug-sentry', function () {
     $message = 'Error message '.date('Y-m-d H:i:s');
     throw new Exception($message);
+});
+
+Route::get('/debug-cache', function () {
+    Benchmark::dd([
+        'Without Cache' => function () {
+            return User::all();
+        },
+        'With Cache' => function () {
+            return Cache::remember('users', 60, function () {
+                return User::all();
+            });
+        },
+    ]);
 });
 
 require __DIR__.'/auth.php';
