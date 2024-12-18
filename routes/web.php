@@ -4,9 +4,9 @@ use App\Http\Controllers\ChangelogController;
 use App\Http\Controllers\ProfileController;
 use App\Models\User;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Benchmark;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Benchmark;
 use Inertia\Inertia;
 
 Route::get('/', function () {
