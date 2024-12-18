@@ -159,7 +159,7 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 You can view the application changelog by visiting the `/changelog` path in your browser.
 
-And there is a path in the project /changelog where the content is represented in the changelog.md file.
+And there is a path in the project /changelog where the content is represented in the [Changelog file](./CHANGELOG.md).
 
 ## License
 
