@@ -170,7 +170,7 @@ return [
 
         Watchers\LogWatcher::class => [
             'enabled' => env('TELESCOPE_LOG_WATCHER', true),
-            'level' => 'error',
+            'level' => 'error, debug, info, notice, warning, alert, critical, emergency',
         ],
 
         Watchers\MailWatcher::class => env('TELESCOPE_MAIL_WATCHER', true),
