@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\ChangelogController;
 use App\Http\Controllers\ProfileController;
+use App\Mail\DebugMail;
 use App\Jobs\DebugJob;
 use App\Models\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Benchmark;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
@@ -80,6 +82,14 @@ Route::get('/debug-job', function () {
 
     return response()->json([
         'message' => 'DebugJob',
+    ]);
+});
+
+Route::get('/debug-notification/mail', function () {
+    Mail::to('khalisser@gmail.com')->send(new DebugMail());
+
+    return response()->json([
+        'message' => 'Debug mail sent',
     ]);
 });
 
