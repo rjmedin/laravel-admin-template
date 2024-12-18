@@ -7,6 +7,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Benchmark;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 
 Route::get('/', function () {
@@ -45,6 +46,18 @@ Route::get('/debug-cache', function () {
                 return User::all();
             });
         },
+    ]);
+});
+
+Route::get('/debug-storage', function () {
+    Storage::disk('local')->put('test_private.txt', 'Content of private storage');
+    Storage::disk('public')->put('test_public.txt', 'Content of public storage');
+    Storage::disk('s3')->put('test_s3.txt', 'Content of s3 storage');
+
+    return response()->json([
+        'private_content' => Storage::disk('local')->get('test_private.txt'),
+        'public_content' => Storage::disk('public')->get('test_public.txt'),
+        's3_content' => Storage::disk('s3')->get('test_s3.txt'),
     ]);
 });
 

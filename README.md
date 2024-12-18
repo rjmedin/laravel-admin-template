@@ -147,6 +147,14 @@ pnpm run pest
 
 > These commands help to keep the code clean and functional before committing to the repository.
 
+## Configurations in AWS
+
+### S3
+
+How to configure the S3 bucket in AWS:
+
+> In [this video](https://www.youtube.com/watch?v=5tFMj_0IAxU) explain how to configure the S3 bucket in AWS.
+
 ## Contributing
 
 Thank you for considering contributing to the template! The contribution guide can be found in the [Contributing document](./CONTRIBUTING.md).
