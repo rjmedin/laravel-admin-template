@@ -11,7 +11,8 @@
     "playwrite": "playwright test",
     "vitest": "vitest --run",
     "pest": "./vendor/bin/pest",
-    "sentry:test": "php artisan sentry:test"
+    "sentry:test": "php artisan sentry:test",
+    "tinker": "php artisan tinker"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
