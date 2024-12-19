@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\ChangelogController;
 use App\Http\Controllers\ProfileController;
-use App\Mail\DebugMail;
 use App\Jobs\DebugJob;
+use App\Mail\DebugMail;
 use App\Models\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Benchmark;
@@ -86,7 +86,7 @@ Route::get('/debug-job', function () {
 });
 
 Route::get('/debug-notification/mail', function () {
-    Mail::to('khalisser@gmail.com')->send(new DebugMail());
+    Mail::to('khalisser@gmail.com')->send(new DebugMail);
 
     return response()->json([
         'message' => 'Debug mail sent',

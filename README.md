@@ -147,6 +147,17 @@ pnpm run pest
 
 > These commands help to keep the code clean and functional before committing to the repository.
 
+## Configurations in Google
+
+### Gmail
+
+How to configure the Gmail for send mail:
+
+- Go to [Google Account](https://myaccount.google.com)
+- Find "Create and manage application passwords"
+- Create a new password for the application
+- Use the password in the .env file
+
 ## Configurations in AWS
 
 ### S3
