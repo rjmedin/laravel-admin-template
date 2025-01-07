@@ -166,6 +166,14 @@ How to configure the S3 bucket in AWS:
 
 > In [this video](https://www.youtube.com/watch?v=5tFMj_0IAxU) explain how to configure the S3 bucket in AWS.
 
+## Configurar Discord
+
+- Ve al canal de texto en Discord donde deseas recibir las alertas.
+- Haz clic en el ícono de configuración del canal.
+- Ve a la sección Integraciones y selecciona Crear Webhook.
+- Asigna un nombre al webhook y copia la URL generada.
+- Agrega a las variables de entorno la url de tu webhook `DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/XXXXXXXXX/YYYYYYYYY`
+
 ## Contributing
 
 Thank you for considering contributing to the template! The contribution guide can be found in the [Contributing document](./CONTRIBUTING.md).

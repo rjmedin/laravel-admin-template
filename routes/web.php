@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Jobs\DebugJob;
 use App\Mail\DebugMail;
 use App\Models\User;
+use App\Services\DiscordService;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Benchmark;
 use Illuminate\Support\Facades\Cache;
@@ -91,6 +92,11 @@ Route::get('/debug-notification/mail', function () {
     return response()->json([
         'message' => 'Debug mail sent',
     ]);
+});
+
+Route::get('/debug-discord', function () {
+    $discordService = new DiscordService;
+    $discordService->sendMessage('Alerta Bot superpoderoso', 'Hola, esta es una alerta desde Laravel!');
 });
 
 require __DIR__.'/auth.php';
