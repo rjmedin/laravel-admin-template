@@ -174,6 +174,11 @@ How to configure the S3 bucket in AWS:
 - Asigna un nombre al webhook y copia la URL generada.
 - Agrega a las variables de entorno la url de tu webhook `DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/XXXXXXXXX/YYYYYYYYY`
 
+## Configurar Telegram
+
+- En la aplicación de Telegram enviar un mensaje '/newbot' a @BotFather y seguir las instrucciones para crear el bot.
+- Una vez creado, copiar el token proporcionado y copiar en las variables de entorno como TELEGRAM_BOT_TOKEN={API_TOKEN_OBTENIDO}
+
 ## Contributing
 
 Thank you for considering contributing to the template! The contribution guide can be found in the [Contributing document](./CONTRIBUTING.md).
